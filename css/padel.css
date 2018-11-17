@@ -1,0 +1,10 @@
+#upmlogo{height:45px;display:inline;margin-top: -13px;opacity:0.9}
+#upmlogo_cartel{opacity:0.7}
+#cuerpo{background: url('../imgs/red.jpg') no-repeat; background-size: cover; 
+        color:white; 
+        border:1px solid black; 
+        border-radius: 10px;
+            -webkit-border-radius:10px;
+            -moz-border-radius:10px;
+            -ms-border-radius:10px;        
+        }
