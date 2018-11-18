@@ -1,0 +1,31 @@
+#upmlogo {
+    display: inline-flex ;
+    height: 45px;
+    margin-top: -0.5em;
+}
+
+.hidden {
+    display: none;
+}
+
+.jumbotron{
+    background: url('../imgs/lebron.jpg') no-repeat;
+    background-size: 100%;
+    color:white;
+}
+
+.carousel, .carousel-inner > .carousel-item  > img {
+    height: 41.35em;
+}
+
+.table {
+    margin-top: 5em;
+}
+
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+    text-align: center!important;
+}
