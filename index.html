@@ -36,17 +36,20 @@
           <li class="nav-item"><a class="nav-link active" href="index.html" onclick="showPage('inicio')">Inicio <span class="sr-only">(current)</span></a></li>
           <li class="nav-item"><a class="nav-link" href="#" onclick="showPage('servicios')">Servicios</a></li>
           <li class="nav-item"><a class="nav-link" href="#" onclick="showPage('instalaciones')">Instalaciones</a></li>
-          <li class="nav-item"><a class="nav-link disabled" href="#">Reservar</a></li>
+          <li class="nav-item"><a class="nav-link disabled" id='reservaLink' href="#">Reservar</a></li>
         </ul>
         <ul class="navbar-nav ml-auto">
           <li class="nav-item"><a class="nav-link" href="#" onclick="showPage('registro')"><span class="fas fa-user"></span> Registro</a></li>
-          <li class="nav-item"><a class="nav-link" href="#" onclick="showPage('login')" ><span class="fas fa-sign-in-alt"></span> Login</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id='loginLink' onclick="showPage('login')"><span class="fas fa-sign-in-alt"></span> Login</a>
+            <a class="nav-link hidden" href="#" id="logout" onclick="logout()"><span class="fas fa-door-open"></span> Logout</a>
+          </li>
         </ul>
       </div>
     </nav>
   </header>
 
-  <section id="inicio">
+  <section id="inicio" class="hidden">
     <div class="jumbotron jumbotron-fluid jumbotrontest">
       <div class="container img-background">
         <h1 class="display-4 bold">Basket UPM</h1>
@@ -143,7 +146,12 @@
   </section>
 
   <section id="reservar" class="hidden">
-    <!-- Se desarrollará en la segunda práctica -->
+      <div class="jumbotron jumbotron-fluid jumbotrontest">
+          <div class="container img-background">
+            <h1 class="display-4 bold">¡El usuario ha sido registrado!</h1>
+            <p class="lead">Próximamente podrá ver su página de reservas...</p>
+          </div>
+        </div>
   </section>
 
   <section id="registro" class="hidden">
@@ -173,7 +181,9 @@
       <input type="text" id="userLogin" class="form-control" placeholder="User" required="true" autofocus="true">
       <label for="passwordLogin" class="sr-only">Password</label>
       <input type="password" id="passwordLogin" class="form-control" placeholder="Password" required="true">
-      <div class="mb-4"></div>
+      <div class="mb-4" >
+        <h6 class="hidden alert-danger" id='invalidUser'>Usuario/password no válido</h6>
+      </div>
       <button class="btn btn-lg btn-primary btn-block" type="submit" onclick="login()">Login</button>
     </form>
   </section>

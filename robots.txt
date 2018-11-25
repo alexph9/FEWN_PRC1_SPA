@@ -1,0 +1,17 @@
+
+User-agent: *
+Crawl-Delay: 60
+Disallow: /imgs/*
+Disallow: /imgs/
+Disallow: /js/
+Disallow: /*.js$
+Disallow: /*.inc$
+Disallow: /*.css$
+User-agent: All
+Allow:/
+User-agent: Googlebot-Image
+Disallow: /
+User-agent: ia_archiver
+Disallow: /
+User-agent: duggmirror
+Disallow: /

@@ -29,3 +29,7 @@
     margin: auto;
     text-align: center!important;
 }
+
+.alert-danger{
+    margin-top: 0.5em;
+}
